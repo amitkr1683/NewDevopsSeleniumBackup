@@ -18,7 +18,8 @@ import org.testng.annotations.Test;
 import action.ReadConfigDemo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class HRMLoginExample {
+public class HRMLogin 
+	Example {
 
 	WebDriver driver;
 	ReadConfigDemo config;
