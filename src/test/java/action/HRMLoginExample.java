@@ -30,29 +30,22 @@ public class HRMLoginExample {
 		driver = new ChromeDriver();
 
 		config = new ReadConfigDemo();
-
 		System.out.println(config.getAppURL());
-		
 		driver.get(config.getAppURL());
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
-
 	@AfterTest
 	public void closeApp() throws Exception {
 		Thread.sleep(4000);
 		driver.close();
-
 	}
-
 	@Test
 	public void loginWithValidUserDetails() throws Exception {
 
 		driver.findElement(By.id("txtUsername")).sendKeys(config.getAdminUser());
 		driver.findElement(By.id("txtPassword")).sendKeys(config.getAdminPassword());
 		driver.findElement(By.id("btnLogin")).click();
-
 	}
-
 }
