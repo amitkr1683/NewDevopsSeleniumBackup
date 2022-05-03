@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="action.HRMLoginExample">
+      <class name="sauseLAB_IntegrationExamples.HRMLoginTest">
         <methods>
-          <include name="loginWithValidUserDetails"/>
-          <include name="launchApp"/>
-          <include name="closeApp"/>
+          <include name="checkDashboard"/>
+          <include name="tearDown"/>
+          <include name="checkWelcome"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- action.HRMLoginExample -->
+      </class> <!-- sauseLAB_IntegrationExamples.HRMLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
