@@ -8,7 +8,6 @@ import org.testng.annotations.AfterTest;
 public class Chrome_drivers {
 
 	WebDriver driver;
-
 	@BeforeTest
 	public void launchApp() {
 		System.setProperty("webdriver.chrome.driver", "./drivers\\chromedriver.exe");
