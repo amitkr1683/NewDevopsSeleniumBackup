@@ -38,7 +38,8 @@ public class HRMLoginTest extends BaseTestSauceLab {
 	@Test(priority = 2)
 	public void check_WelcomeTest() throws Exception {
 		doLogin();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		//Thread.sleep(10000);
 		String welcomAmit = driver.findElement(By.id("Welcome")).getText();
 		
 		AssertJUnit.assertTrue(welcomAmit.contains("Welcome"));
